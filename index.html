@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Phoenix Gaming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Add this in the head section -->
+    <link rel="icon" href="phoenix-favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="phoenix-favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="login-overlay" id="loginOverlay">
+        <div class="login-container animate__animated animate__fadeIn">
+            <h2>Phoenix Gaming</h2>
+            <input type="password" id="password" placeholder="Enter Password">
+            <button onclick="checkPassword()">Enter</button>
+        </div>
+    </div>
+          <nav>
+              <div class="logo-container">
+                  <img src="phoenix-logo.svg" alt="Phoenix Logo" class="logo-img">
+                  <span class="logo-text">Phoenix Gaming</span>
+                  <!-- Add this inside the nav element -->
+                    <div class="clock-container">
+                     <span id="clock"></span>
+                    </div>
+                    <!-- Add this next to the clock in the nav -->
+                    <div class="battery-container">
+                        <div id="batteryLevel"></div>
+                        <div id="batteryIcon">
+                            <div class="battery-body">
+                                <div class="battery-fill"></div>
+                            </div>
+                            <div class="battery-tip"></div>
+                        </div>
+                    </div>
+              </div>
+              <ul>
+                  <li><a href="#home" class="nav-link active">Home</a></li>
+                  <li><a href="#games" class="nav-link">Games</a></li>
+                  <li><a href="#about" class="nav-link">About</a></li>
+              </ul>
+          </nav>
+    <main id="content" class="hidden">
+        <!-- Content will be loaded here dynamically -->
+    </main>
+
+    <script src="script.js" id="rMe"></script>
+</body>
+</html>
